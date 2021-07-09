@@ -3,8 +3,8 @@ import React from 'react'
 const CompanyTitle = () => {
 
 return (
-    <div>
-      <h1>Hookah House</h1>
+    <div class = "siteName">
+      <h1 id = "title">Hookah House</h1>
     </div>
   )
 };
