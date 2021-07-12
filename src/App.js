@@ -1,13 +1,30 @@
 
+import React from 'react';
 import './App.css';
-import header from '../src/Components/header';
+import Header from '../src/Components/header';
+//import companyTitle from '../src/Components/companyTitle';
 
 function App() {
+
   return (
     <div className="App">
-      <header/>
+      <Header/>
     </div>
   );
 }
+
+
+/*
+return (
+  <div className="App">
+    <companyTitle/>
+    
+  </div>
+);
+
+}
+
+*/
+
 
 export default App;

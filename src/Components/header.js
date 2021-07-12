@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import companyTitle from '../Components/companyTitle';
+import CompanyTitle from '../Components/companyTitle';
 
-const header = ()=> {
+const Header = ()=> {
     return(
         <header className="App-header">
-        <companyTitle/>
+        <CompanyTitle/>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -22,4 +22,4 @@ const header = ()=> {
     )
 };
 
-export default header;
+export default Header;

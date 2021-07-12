@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const companyTitle = () => {
+const CompanyTitle = () => {
 
 return (
-    <div class = "siteName">
+    <div id = "siteTitle">
       <h1 id = "title">Hookah House</h1>
     </div>
   )
 };
 
 
-export default companyTitle;
+export default CompanyTitle;
 
