@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#siteTitle {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: blue;
+  font-size:xx-small;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
