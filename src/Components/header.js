@@ -1,22 +1,16 @@
 import React from 'react';
 
-import CompanyTitle from '../Components/companyTitle';
+
 
 const Header = ()=> {
+  //add meta data here
     return(
         <header className="App-header">
-        <CompanyTitle/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+
+
+        
+  
       </header>
 
     )

@@ -2,29 +2,26 @@
 import React from 'react';
 import './App.css';
 import Header from '../src/Components/header';
-//import companyTitle from '../src/Components/companyTitle';
+import reactDom from 'react-dom';
+import NavBar from './Components/navBar';
 
 function App() {
 
   return (
+    <React.Fragment>
     <div className="App">
       <Header/>
     </div>
+    <NavBar/>
+    
+      
+    
+    </React.Fragment>
   );
 }
 
 
-/*
-return (
-  <div className="App">
-    <companyTitle/>
-    
-  </div>
-);
 
-}
-
-*/
 
 
 export default App;
