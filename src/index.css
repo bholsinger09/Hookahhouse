@@ -9,28 +9,45 @@ body {
 
 #siteTitle {
   position: absolute;
-  top: 2%;
+  top: 1%;
   left: 2%;
-  height: 5%;
+  height: 10%;
   color: blue;
-  font-size:xx-small;
-  background-color: black;
+  font-size:small;
+  padding:2rem;
+  
 }
 .navBar{
-  position: relative;
-  background-color: red;
+  position: sticky;
+  background-color:black;
   top: 1%;
-  right: 2%;
-  color: blue;
   font-size:xx-small;
   display: flex;
   box-shadow:0 0 blue;
   display: -webkit-flex;
   float: right;
-  padding:0;
+  padding:2%;
   margin:0;
   height: 15%;
   width: 100%;
+  opacity:0.75;
+  z-index: 5;
+  
+
+}
+
+.navMenu{
+  top: 1%;
+  right: 2%;
+  font-size:xx-small;
+  display: flex;
+  float: right;
+  position: absolute;
+  justify-items: left;
+  color: blue;
+  height: 10%;
+  width: 10%;
+  
 
 }
 
