@@ -13,7 +13,7 @@ body {
   left: 2%;
   height: 10%;
   color: blue;
-  font-size:small;
+  font-size:large;
   padding:2rem;
   
 }
@@ -21,7 +21,6 @@ body {
   position: sticky;
   background-color:black;
   top: 1%;
-  font-size:xx-small;
   display: flex;
   box-shadow:0 0 blue;
   display: -webkit-flex;
@@ -37,9 +36,9 @@ body {
 }
 
 .navMenu{
-  top: 1%;
+  
   right: 2%;
-  font-size:xx-small;
+  font-size:small;
   display: flex;
   float: right;
   position: absolute;
@@ -48,6 +47,38 @@ body {
   height: 10%;
   width: 10%;
   
+
+}
+
+#homeMenu{
+  
+  right: 20rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+
+}
+
+#quoteMenu{
+  
+  right: 16rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+
+}
+
+#contactMenu{
+  
+  right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+
+}
+
+#directionsMenu{
+  
+  right: 10rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
 
 }
 
