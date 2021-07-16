@@ -22,7 +22,7 @@ body {
   background-color:black;
   top: 1%;
   display: flex;
-  box-shadow:0 0 blue;
+  box-shadow:2px 2px blue;
   display: -webkit-flex;
   float: right;
   padding:2%;
@@ -55,6 +55,7 @@ body {
   right: 20rem;
   padding-left: 1rem;
   padding-top: 1rem;
+  text-decoration: none;
 
 }
 

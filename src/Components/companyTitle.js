@@ -5,7 +5,7 @@ const CompanyTitle = () => {
 return (
   <div>
     
-      <h1 id = "siteTitle">Hookah House</h1>
+      <h1 id = "siteTitle">Grocery & Hookah House</h1>
       </div>
   )
 };
