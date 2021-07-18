@@ -55,6 +55,14 @@ body {
 
 }
 
+.introductionPar{
+  padding-left: 25%;
+  padding-right: 25%;
+  color: green;
+  font-size:large;
+
+}
+
 #homeMenu{
   
   right: 20rem;
