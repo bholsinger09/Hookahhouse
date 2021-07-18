@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: skyblue;
+  
+  
+  
 }
 
 #siteTitle {
@@ -20,17 +24,19 @@ body {
 .navBar{
   position: sticky;
   background-color:black;
-  top: 1%;
   display: flex;
   box-shadow:2px 2px blue;
   display: -webkit-flex;
   float: right;
   padding:2%;
   margin:0;
-  height: 15%;
   width: 100%;
   opacity:0.75;
   z-index: 5;
+  margin-top: -2%;
+  
+  
+  
   
 
 }
@@ -44,7 +50,6 @@ body {
   position: absolute;
   justify-items: left;
   color: blue;
-  height: 10%;
   width: 10%;
   
 
@@ -81,6 +86,14 @@ body {
   padding-left: 2rem;
   padding-top: 1rem;
 
+}
+
+#welcome{
+  font-size: xx-large;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 10%;
+  
 }
 
 
