@@ -5,7 +5,8 @@ const NavBar = () => {
     return(
         <React.Fragment>
         
-      <div class="navBar">
+      <nav class="navBar" class="sticky" >
+        <div id="nav">
       <CompanyTitle/>
         <ul>
   <li class="navMenu"id="homeMenu" ><a href="default.asp">Home</a></li>
@@ -14,6 +15,7 @@ const NavBar = () => {
   <li class="navMenu" id="directionsMenu"><a href="#top">Get Directions</a></li>
        </ul> 
        </div>
+       </nav>
        </React.Fragment>
 
     )
