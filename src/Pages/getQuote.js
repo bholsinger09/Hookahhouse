@@ -1,6 +1,6 @@
 import React from 'react';
 
-const getQuote = () => {
+const GetQuote = () => {
     return(
         <React.Fragment>
     <form>
@@ -17,4 +17,4 @@ const getQuote = () => {
     )
 };
 
-export default getQuote;
+export default GetQuote;
