@@ -2,7 +2,7 @@ import React from 'react';
 import MainPictureBody from '../Assets/MainPictureBody.jpg'
 
 
-const Product = () => {
+const MainPic = () => {
     return(
         <React.Fragment>
             <div>
@@ -14,4 +14,4 @@ const Product = () => {
     )
 };
 
-export default Product;
+export default MainPic;
