@@ -7,6 +7,8 @@ import Welcome from '../src/Components/bodyWelcome'
 import NavBar from './Components/navBar';
 import MainPic from './Components/homeMainPic'
 import OriginStory from './Components/originStory';
+//import { BrowserRouter as NavLink } from "react-router-dom";
+
 
 function App() {
 

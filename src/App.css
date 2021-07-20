@@ -41,6 +41,10 @@ a{
   text-decoration: none;
 }
 
+li{
+  color:magenta;
+  text-decoration: none;
+}
 
 @keyframes App-logo-spin {
   from {

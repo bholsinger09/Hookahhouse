@@ -1,5 +1,6 @@
 import React from 'react';
 import CompanyTitle from '../Components/companyTitle'
+import { BrowserRouter as NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return(
@@ -9,10 +10,13 @@ const NavBar = () => {
         
       <CompanyTitle/>
         <ul>
-  <li className="navMenu"id="homeMenu" ><a href="default.asp">Home</a></li>
-  <li className="navMenu" id= "quoteMenu"><a href="#top">Get Quote</a></li>
-  <li className="navMenu" id="contactMenu"><a href="#top">Contact Us</a></li>
-  <li className="navMenu" id="directionsMenu"><a href="#top">Get Directions</a></li>
+  <li className="navMenu"id="homeMenu" ><NavLink>Home</NavLink></li>
+
+  <li className="navMenu" id= "quoteMenu"><NavLink>Get Quote</NavLink></li>
+
+  <li className="navMenu" id="contactMenu"><NavLink>Contact us</NavLink></li>
+
+  <li className="navMenu" id="directionsMenu"><NavLink>Get Directions</NavLink></li>
        </ul> 
        
        </nav>
