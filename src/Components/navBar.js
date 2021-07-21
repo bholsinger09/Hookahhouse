@@ -1,6 +1,6 @@
 import React from 'react';
 import CompanyTitle from '../Components/companyTitle'
-import { BrowserRouter as NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return(
