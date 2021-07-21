@@ -29,8 +29,8 @@ function App() {
           <Route exact path="/getQuote" component={GetQuote}/>
           
           </switch>
-          <Route path="/getQuote"/>
-            <GetQuote />
+         
+            
           
         
       
