@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GetQuote = () => {
+const GetQuote = (props) => {
     return(
         <React.Fragment>
     <form>
