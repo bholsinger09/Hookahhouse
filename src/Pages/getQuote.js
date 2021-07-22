@@ -1,4 +1,5 @@
 import React from 'react';
+//import GoogleMaps from '../Components/GoogleMaps';
 
 const GetQuote = (props) => {
     return(
@@ -29,6 +30,10 @@ const GetQuote = (props) => {
   <input type="submit" value="Submit" />
 
   </form>
+
+
+
+  
         </React.Fragment>
 
     )

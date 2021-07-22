@@ -9,6 +9,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Home from './Pages/home';
 import GetQuote from './Pages/getQuote';
+import GetDirections from './Pages/getDirections';
+import ContactUs from './Pages/contactUs'
+//import GoogleMaps from './Components/GoogleMaps'
+
 
 
 function App() {
@@ -24,11 +28,21 @@ function App() {
     
     
     
-        <switch>
+        <Switch>
           <Route exact path="/" component={Home}/>
+
+          
+
+          
           <Route exact path="/getQuote" component={GetQuote}/>
           
-          </switch>
+          
+          <Route exact path="/getDirections" component={GetDirections}/>
+
+          <Route exact path="/contactUs" component={ContactUs}/>
+
+          </Switch>
+          
          
             
           
@@ -37,6 +51,8 @@ function App() {
   
     
     </Router> 
+
+    
     
     </React.Fragment>
   );
