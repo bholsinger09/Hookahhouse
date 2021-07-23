@@ -1,8 +1,7 @@
 
 import React from 'react';
-//import GoogleMaps from '../Components/GoogleMaps';
 import Map from '../Components/maps'
-//import Gmap from '../Components/GoogleMaps'
+
 
 
 

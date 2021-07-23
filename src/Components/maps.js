@@ -1,5 +1,5 @@
 /*global google*/
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
 import React, { useState } from 'react';
 
 import {
@@ -19,7 +19,7 @@ function Map() {
 
   return (
     <LoadScript
-      googleMapsApiKey=""
+      googleMapsApiKey="AIzaSyBLHVaMGB8ZnWhGKwIDrCV5C1nxpHEPwl0"
       libraries={lib}
 
 

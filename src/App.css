@@ -169,15 +169,30 @@ li{
 
 
 
+
 #quoteForm{
  
-  top: 10%;
+  
   background-color: black;
   color: white;
-  position: absolute;
+  
   width: 100%;
   height:100%;
 
+}
+
+#formName{
+  top:45%;
+
+}
+
+#formEmail{
+  top:50%;
+  
+}
+
+#formQuestion{
+  top:60%;
 }
 
 .Form{
@@ -192,9 +207,20 @@ li{
   color: magenta;
   font-size: xx-large;
   padding: 2rem;
+  left:20%;
+  position: absolute;
 }
 #quotePar{
   color: greenyellow;
+  top: 5rem;
+  left: 20%;
+  position: absolute;
+}
+
+#quoteSubmit{
+  bottom: 20%;
+  left: 30%;
+  position:absolute;
 }
 
 .MapContainer{
