@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   
+  
 }
 
 .App-logo {
@@ -44,6 +45,170 @@ a{
 li{
   color:magenta;
   text-decoration: none;
+}
+
+#siteTitle {
+  position: absolute;
+  top: -2%;
+  left: 2%;
+  height: 10%;
+  color: blue;
+  font-size:large;
+  padding:2rem;
+  
+}
+
+
+
+#nav{
+  background-color: black;
+  display: flex;
+  box-shadow:2px 2px blue;
+  display: -webkit-flex;
+  float: right;
+  padding:2%;
+  margin:0;
+  width: 100%;
+  opacity:0.75;
+  z-index: 5;
+  margin-top: -2%;
+  position: fixed;
+}
+
+.homePar{
+  padding-left: 25%;
+  padding-right: 20%;
+  color:darkblue;
+  font-size:large;
+
+}
+
+#originsTitle{
+  padding-left: 45%;
+  padding-right: 40%;
+}
+
+
+
+.navMenu{
+  
+  right: 2%;
+  font-size:small;
+  display: flex;
+  float: right;
+  position: absolute;
+  justify-items: left;
+  width: 10%;
+  
+
+}
+
+.introductionPar{
+  padding-left: 25%;
+  padding-right: 25%;
+  color: green;
+  font-size:large;
+  
+
+}
+
+#homeMenu{
+  
+  right: 20rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  text-decoration: none;
+
+}
+
+#quoteMenu{
+  
+  right: 16rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+
+}
+
+#contactMenu{
+  
+  right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+
+}
+
+#directionsMenu{
+  
+  right: 10rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+
+}
+
+#welcome{
+  font-size: xx-large;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 10%;
+  
+}
+
+#introductionFreeShipping{
+  color:red;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-size: xx-large;
+}
+
+#mainPictureBody{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top:  2%;
+
+}
+
+
+
+#quoteForm{
+ 
+  top: 10%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height:100%;
+
+}
+
+.Form{
+  left: 30%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  
+}
+
+#quoteTitle{
+  color: magenta;
+  font-size: xx-large;
+  padding: 2rem;
+}
+#quotePar{
+  color: greenyellow;
+}
+
+.MapContainer{
+  height: 100%;
+  width: 100%;
+}
+
+#mapTitle{
+  position: absolute;
+  top: 5rem;
+  padding-left: 40%;
+  padding-right: 20%;
+
+  color:green;
 }
 
 @keyframes App-logo-spin {

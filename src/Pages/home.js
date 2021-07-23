@@ -6,6 +6,8 @@ import NavBar from '../Components/navBar';
 import MainPic from '../Components/homeMainPic';
 import OriginStory from '../Components/originStory';
 
+
+
 const Home = () => {
     return(
         <React.Fragment>
