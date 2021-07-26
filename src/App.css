@@ -236,6 +236,25 @@ li{
   color:green;
 }
 
+
+
+#contactTitle{
+  position:absolute;
+  top: 20%;
+  left:40%;
+}
+
+#contAddress{
+  position:absolute;
+  top: 28%;
+  left: 30%;
+}
+
+#contPhone{
+  position: absolute;
+  top:32%;
+  left:30%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
