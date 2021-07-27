@@ -15,10 +15,16 @@ const NavBar = () => {
    activeClassName="is-active"
    to="/">Home</NavLink></li>
 
+   
+
+
+
+   
+
   <li className="navMenu" id= "quoteMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
-   to="/getQuote">Get Quote</NavLink></li>
+   to="/getQuote">Get a quote </NavLink></li>
 
   <li className="navMenu" id="contactMenu"><NavLink
    className="navbar-item"
@@ -29,6 +35,9 @@ const NavBar = () => {
    className="navbar-item"
    activeClassName="is-active"
    to="/getDirections">Get Directions</NavLink></li>
+
+
+
        </ul> 
        
        </nav>
@@ -38,3 +47,12 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+/*
+
+<li className="navMenu" id="testMenu"><NavLink
+   className="navbar-item"
+   activeClassName="is-active"
+   to="/testData">TestData</NavLink></li>
+
+   */

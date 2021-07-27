@@ -11,7 +11,7 @@ import Home from './Pages/home';
 import GetQuote from './Pages/getQuote';
 import GetDirections from './Pages/getDirections';
 import ContactUs from './Pages/contactUs'
-//import GoogleMaps from './Components/GoogleMaps'
+import Datafetching from './Pages/dataFetching';
 
 
 
@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/" component={Home}/>
 
           
-
+          
           
           <Route exact path="/getQuote" component={GetQuote}/>
           
@@ -41,18 +41,21 @@ function App() {
 
           <Route exact path="/contactUs" component={ContactUs}/>
 
+         
+
+
           </Switch>
           
          
             
           
         
-      
+          
   
     
     </Router> 
 
-    
+  
     
     </React.Fragment>
   );
@@ -63,3 +66,10 @@ function App() {
 
 
 export default App;
+
+/*
+
+<Route exact path="/testData" component={Datafetching}/>
+
+<Route exact path="/getQuote" component={GetQuote}/>
+*/
