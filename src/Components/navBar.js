@@ -39,7 +39,7 @@ const NavBar = () => {
 <li className="navMenu" id="dataMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
-   to="/testData">Test Data</NavLink></li>
+   to="/testState">Test Data</NavLink></li>
 
 
 

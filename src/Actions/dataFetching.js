@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
-export function Datafetching() {
+function Datafetching() {
     const [posts, setPosts] = useState([]);
 
      useEffect(  () => {
