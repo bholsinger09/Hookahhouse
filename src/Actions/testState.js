@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { prototype } from 'google-map-react';
 
 
 function GetData() {
@@ -7,8 +9,19 @@ function GetData() {
   // Similar to componentDidMount and componentDidUpdate:  
   
   useEffect(() => {   
-       // Update the document title using the browser API  
-           });
+
+   axios.get('https://jsonplaceholder.typicode.com/posts')
+
+   
+
+
+        .then( res => { console.log(res)
+       
+          })
+         .catch( err => {
+             console.log(err)
+          })
+        })
 
   return (
     <React.Fragment>
