@@ -11,7 +11,7 @@ import Home from './Pages/home';
 import GetQuote from './Pages/getQuote';
 import GetDirections from './Pages/getDirections';
 import ContactUs from './Pages/contactUs'
-import Datafetching from './Pages/dataFetching';
+import Datafetching from './Actions/dataFetching';
 
 
 
@@ -41,7 +41,7 @@ function App() {
 
           <Route exact path="/contactUs" component={ContactUs}/>
 
-         
+          <Route exact path="/testData" component={Datafetching}/>
 
 
           </Switch>

@@ -36,6 +36,11 @@ const NavBar = () => {
    activeClassName="is-active"
    to="/getDirections">Get Directions</NavLink></li>
 
+<li className="navMenu" id="dataMenu"><NavLink
+   className="navbar-item"
+   activeClassName="is-active"
+   to="/testData">Test Data</NavLink></li>
+
 
 
        </ul> 

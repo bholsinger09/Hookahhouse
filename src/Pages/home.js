@@ -16,6 +16,7 @@ const Home = () => {
 
             </div>
             <Welcome/>
+            
             <MainPic/>
             <OriginStory/>
   
@@ -25,3 +26,4 @@ const Home = () => {
 };
 
 export default Home;
+

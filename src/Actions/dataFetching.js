@@ -2,14 +2,16 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 
 export function Datafetching() {
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState([]);
 
-    useEffect(  () => {
+     useEffect(  () => {
         axios.get('https://jsonplaceholder.typicode.com/posts')
         .then( res => console.log(res))
     })
     .catch( err => { console.log(err)
-    })
+    });
+
+    //This currently outputs useEffect as undefined
 
     
 
