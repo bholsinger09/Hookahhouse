@@ -2,6 +2,7 @@ import React from 'react';
 import CompanyTitle from '../Components/companyTitle'
 import { NavLink } from "react-router-dom";
 
+
 const NavBar = () => {
     return(
         <React.Fragment>
@@ -10,21 +11,17 @@ const NavBar = () => {
         
       <CompanyTitle/>
         <ul>
-  <li className="navMenu"id="homeMenu" ><NavLink
+  <li className="navMenu"id="homeMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
-   to="/">Home</NavLink></li>
-
-   
-
-
-
-   
+   to ="/">Home</NavLink></li>
 
   <li className="navMenu" id= "quoteMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
    to="/getQuote">Get a quote </NavLink></li>
+
+
 
   <li className="navMenu" id="contactMenu"><NavLink
    className="navbar-item"

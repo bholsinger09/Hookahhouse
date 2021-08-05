@@ -11,6 +11,7 @@ import Home from './Pages/home';
 import GetQuote from './Pages/getQuote';
 import GetDirections from './Pages/getDirections';
 import ContactUs from './Pages/contactUs'
+import NotFoundPage from './Pages/notfoundPage';
 
 
 import GetData from './Actions/testState';
@@ -31,19 +32,18 @@ function App() {
     
     
         <Switch>
-          <Route exact path="/" component={Home}/>
+          <Route path="/" component={Home} exact />
 
           
+          <Route path="/getQuote" component={GetQuote} />
           
           
-          <Route exact path="/getQuote" component={GetQuote}/>
-          
-          
-          <Route exact path="/getDirections" component={GetDirections}/>
+          <Route path="/getDirections" component={GetDirections} />
 
-          <Route exact path="/contactUs" component={ContactUs}/>
+          <Route path="/contactUs" component={ContactUs} />
 
-          <Route exact path="/testState" component={GetData}/>
+          <Route path="/testState" component={GetData} />
+          <Route component={NotFoundPage}/>
 
 
           </Switch>

@@ -4,7 +4,7 @@ import { prototype } from 'google-map-react';
 
 
 function GetData() {
-  const [posts, setPost] = useState([]);
+  const [posts, setPosts] = useState([]);
 
   // Similar to componentDidMount and componentDidUpdate:  
   
@@ -15,13 +15,16 @@ function GetData() {
    
 
 
-        .then( res => { console.log(res)
+        .then( res => {
+          console.log(res)
+          setPosts(res.data)
        
           })
          .catch( err => {
              console.log(err)
+             
           })
-        })
+        }, [])
 
   return (
     <React.Fragment>
