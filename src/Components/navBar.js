@@ -11,32 +11,33 @@ const NavBar = () => {
         
       <CompanyTitle/>
         <ul>
-  <li className="navMenu"id="homeMenu"><NavLink
+
+  <li className="navMenu" id="homeMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
-   to ="/">Home</NavLink></li>
+   to="/">Home</NavLink></li>
+
+  
 
   <li className="navMenu" id= "quoteMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
    to="/getQuote">Get a quote </NavLink></li>
 
-
-
-  <li className="navMenu" id="contactMenu"><NavLink
+<li className="navMenu" id="contactMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
-   to="/contactUs">Contact us</NavLink></li>
+   to="/contactUs">Contact Us</NavLink></li>
+
+
+
 
   <li className="navMenu" id="directionsMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
    to="/getDirections">Get Directions</NavLink></li>
 
-<li className="navMenu" id="dataMenu"><NavLink
-   className="navbar-item"
-   activeClassName="is-active"
-   to="/testState">Test Data</NavLink></li>
+
 
 
 
@@ -52,9 +53,9 @@ export default NavBar;
 
 /*
 
-<li className="navMenu" id="testMenu"><NavLink
+<li className="navMenu" id="dataMenu"><NavLink
    className="navbar-item"
    activeClassName="is-active"
-   to="/testData">TestData</NavLink></li>
+   to="/testState">Test Data</NavLink></li>
 
    */
