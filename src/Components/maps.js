@@ -1,5 +1,5 @@
-/*global google*/
-//import ReactDOM from 'react-dom';
+
+
 import React, { useState } from 'react';
 
 import {
@@ -7,6 +7,8 @@ import {
   StandaloneSearchBox,
   LoadScript 
 } from '@react-google-maps/api';
+
+
 const lib = ['places'];
 const center = { lat: 40.756795, lng: -73.954298 };
 function Map() {

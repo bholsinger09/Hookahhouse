@@ -1,7 +1,14 @@
 import React from 'react';
+import useState from 'react';
 
 
 const GetQuote = (props) => {
+
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [question, setQuestion] = useState("");
+
     return(
         <React.Fragment>
     
