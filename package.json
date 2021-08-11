@@ -5,15 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node scr/main.js",
-    
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/mysql": "^2.15.19",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "mysql": "^2.18.1",
     "nodemon": "^2.0.12"
   },
   "devDependencies": {
