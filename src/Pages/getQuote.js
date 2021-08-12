@@ -19,17 +19,23 @@ const GetQuote = (props) => {
 
   <label id="formName" className="Form">
     Name:
-    <input type="text" name="name" />
+    <input type="text" name="name" 
+    onChange={(event) => { setName(event.target.value);
+    }}/>
   </label>
   
   <label id="formEmail" className="Form">
     Email:
-    <input type="text" name="email" />
+    <input type="text" name="email" 
+    onChange={(event) => { setEmail(event.target.value);
+    }}/>
   </label>
   <br/>
   <label id="formQuestion" className="Form" >
     What products would you like to know more about:
-    <input type="text" name="help" />
+    <input type="text" name="help" 
+    onChange={(event) => { setQuestion(event.target.value);
+    }}/>
   </label>
 
   <br/>

@@ -4,7 +4,7 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "scripts": {
-    "start": "node scr/main.js",
+    "start": "node /index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,8 +14,8 @@
     "@types/mysql": "^2.15.19",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.12"
+    "mysql": "^2.18.1"
+    
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
