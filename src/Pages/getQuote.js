@@ -11,7 +11,8 @@ const GetQuote = (props) => {
 
   const dispFields = () => {
     console.log(name + email + question);
-    //console.log("test");
+    
+    
   };
   
 
@@ -19,9 +20,7 @@ const GetQuote = (props) => {
   This is used in case prevent defualt needs used 
 function handleSubmit(e) {
 e.preventDefault();    }
-  
-
- */
+  */
 
   
 
@@ -69,12 +68,14 @@ e.preventDefault();    }
   //funtion is called however seems to constantly call the useState which is used in onchange
   //when submit is done returns empty string 
 
-  onClick = {dispFields()}
+  onClick = {()=>
+    dispFields()
+  }
   >Submit </button>
 
   </form>
 
-  
+  ›
 
   
         </React.Fragment>
