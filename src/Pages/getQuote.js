@@ -10,7 +10,10 @@ const GetQuote = (props) => {
   const [question, setQuestion] = useState("");
 
   const dispFields = () => {
+    console.log("hit first");
     console.log(name + email + question);
+    console.log(name);
+    console.log("hit last");
     
     
   };
@@ -68,8 +71,8 @@ e.preventDefault();    }
   //funtion is called however seems to constantly call the useState which is used in onchange
   //when submit is done returns empty string 
 
-  onClick = {()=>
-    dispFields()
+  onClick = {
+    dispFields
   }
   >Submit </button>
 
