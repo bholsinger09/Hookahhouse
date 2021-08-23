@@ -14,7 +14,7 @@ import ContactUs from './Pages/contactUs'
 import NotFoundPage from './Pages/notfoundPage';
 
 
-import GetData from './Actions/testState';
+//import GetData from './Actions/testState';
 
 
 
@@ -42,7 +42,7 @@ function App() {
 
           <Route path="/contactUs" component={ContactUs} />
 
-          <Route path="/testState" component={GetData} />
+         
           <Route component={NotFoundPage}/>
 
 
@@ -72,6 +72,7 @@ export default App;
 /*
 
 <Route exact path="/testData" component={Datafetching}/>
+ <Route path="/testState" component={GetData} />
 
 
 */
