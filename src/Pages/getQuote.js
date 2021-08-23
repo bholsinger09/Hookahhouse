@@ -11,14 +11,18 @@ import React from 'react';
    const [email, setEmail] = useState("");
    const [question, setQuestion] = useState("");
 
-   const submitQuestion = () => {
-     Axios.post('http://localhost:8000/create',
-     {
-       name:name , 
-       email:email , 
-       question:question
-     }).then((response)=> {console.log(response)})
-   };
+   const submitQuestion = async() => { try {
+    Axios.post('http://localhost:8000/create',
+    {
+      name:name , 
+      email:email , 
+      question:question
+    }).then((response)=> {console.log(response)})
+   } catch (err) {console.error(err);
+       
+   }
+    
+   }
 
    /*
    This was used to test the state of name, email, and question
