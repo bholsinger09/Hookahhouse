@@ -11,13 +11,19 @@ import React from 'react';
    const [email, setEmail] = useState("");
    const [question, setQuestion] = useState("");
 
-   const submitQuestion = async() => { try {
-    Axios.post('http://localhost:8000/create',
-    {
+   const submitQuestion = () => { try {
+     
+    Axios.post('http://localhost:8000/',
+   {
       name:name , 
       email:email , 
       question:question
-    }).then(()=> {console.log("data sent")})
+    },
+    
+      
+    
+  
+    ).then(()=> {console.log("data sent")})
    } catch (err) {console.error(err);
        
    }
