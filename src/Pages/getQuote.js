@@ -1,7 +1,7 @@
 import React from 'react';
  import {useState} from 'react';
  import Axios from 'axios'
- import { response } from 'express';
+ //import { response } from 'express';
 
 
  const GetQuote = (props) => {
@@ -17,7 +17,7 @@ import React from 'react';
       name:name , 
       email:email , 
       question:question
-    }).then((response)=> {console.log(response)})
+    }).then(()=> {console.log("data sent")})
    } catch (err) {console.error(err);
        
    }
