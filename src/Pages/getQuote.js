@@ -13,17 +13,21 @@ import React from 'react';
 
    const submitQuestion = () => { try {
      
-    Axios.post('http://localhost:8000/',
+    Axios.post('http://localhost:8000/' ,
+    
    {
       name:name , 
       email:email , 
       question:question
+      
     },
     
       
     
   
-    ).then(()=> {console.log("data sent")})
+    ).then(()=> {console.log("data sent");
+    
+  })
    } catch (err) {console.error(err);
        
    }
@@ -94,12 +98,21 @@ import React from 'react';
 
    <button id="quoteSubmit" type="submit" 
 
-   //funtion is called however seems to constantly call the useState which is used in onchange
-   //when submit is done returns empty string 
-
-   onClick = {
+   onClick = 
+   {
      submitQuestion
+     
    }
+
+   /*
+   old way
+      {()=>
+    
+    submitQuestion()
+    
+  }
+  */
+
    >Submit </button>
 
    </form>
