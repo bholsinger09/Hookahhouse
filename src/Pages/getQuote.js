@@ -4,14 +4,16 @@ import React from 'react';
  //import { response } from 'express';
 
 
- const GetQuote = (props) => {
+ const QuoteForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [question, setQuestion] = useState("");
 
 
-   const [name, setName] = useState("");
-   const [email, setEmail] = useState("");
-   const [question, setQuestion] = useState("");
+  
 
-   const submitQuestion = () => { try {
+   function submitQuestion() { try {
+    
      
     Axios.post('http://localhost:8000/' ,
     
@@ -125,4 +127,4 @@ import React from 'react';
      )
  };
 
- export default GetQuote; 
+ export default QuoteForm; 
