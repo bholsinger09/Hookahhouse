@@ -2,6 +2,9 @@
   "name": "hookahsite",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "16.4"
+  },
   "dependencies": {
     "@react-google-maps/api": "^2.2.0",
     "@testing-library/jest-dom": "^5.11.4",
