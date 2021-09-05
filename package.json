@@ -5,7 +5,7 @@
   "engines": {
     "node": "16.8.0"
   },
-  "homepage": "https://github.com/bholsinger09/Hookahhouse",
+  
   "dependencies": {
     "@react-google-maps/api": "^2.2.0",
     "@testing-library/jest-dom": "^5.11.4",
