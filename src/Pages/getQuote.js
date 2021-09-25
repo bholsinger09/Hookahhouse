@@ -15,7 +15,7 @@ import React from 'react';
    function submitQuestion() { try {
     
      
-    Axios.post('https://dashboard.heroku.com/apps/hookahsite-backend.com || http://localhost:8000/' ,
+    Axios.post('https://hookahsite-backend.herokuapp.com || http://localhost:8000/' ,
     
    {
       name:name , 
