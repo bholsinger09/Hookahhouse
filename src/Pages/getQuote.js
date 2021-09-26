@@ -27,34 +27,18 @@ import React from 'react';
       
     
   
-    ).then(()=> {console.log("data sent");
+    )
     
-  })
-   } catch (err) {console.error(err);
+  }
+    catch (err) {console.error(err);
        
    }
     
    }
 
-   /*
-   This was used to test the state of name, email, and question
+  
 
-   const dispFields = () => {
-     console.log("hit first");
-     console.log(name + email + question);
-     console.log(name);
-     console.log("hit last");
-     
-     
-   };
-   
-   */
-
-   /*
-   This is used in case prevent defualt needs used 
- function handleSubmit(e) {
- e.preventDefault();    }
-   */
+ 
 
 
 
@@ -67,7 +51,7 @@ import React from 'react';
 
 
      <form id="quoteForm" 
-     //onSubmit={handleSubmit}
+     
      >
        <h1 id="quoteTitle">Quote Help Form</h1>
        <p id="quotePar">Please provide your Name, Contact Email, and what products you would like more information about in this form :</p>
