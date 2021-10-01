@@ -10,36 +10,51 @@ import React from 'react';
   const [question, setQuestion] = useState("");
 
 
+
+  //This is the promise version 
   
 
-   function submitQuestion() { try {
+
+   const custData =  { name:name , 
+    email:email , 
+    question:question} ;
+
+
+
+  
     
-     
-    Axios.post('https://hookahsite-backend.herokuapp.com ' ,
-    
-   {
-      name:name , 
-      email:email , 
-      question:question
+    const submitPromise= () => {  
+      Axios.post('https://hookahsite-backend.herokuapp.com  || https://localhost:8000 ' , custData)
+      .then( (axiosResponse)=> { 
+                       // here you can use the data 
+                       const submitQuestions = axiosResponse.data;
+                       console.log(submitQuestions);
+                       })
+                       
+      .catch((e)=> {console.log(e)})
       
-    },
-    
-      
-    
-  
-    )
-    
-  }
-    catch (err) {console.error(err);
-       
-   }
-    
-   }
+      }
 
-  
 
- 
 
+    //this uses try catch however the backend is not getting hit with any data
+    //tested this same request in Postman and it works 
+    /*
+    function submitQuestion() { 
+      try {
+       Axios.post('https://hookahsite-backend.herokuapp.com ' ,
+      {
+        name:name , 
+        email:email , 
+        question:question
+        
+      },
+      )
+      }
+      catch (err) {console.error(err);}
+        }
+         
+*/
 
 
 
@@ -86,7 +101,7 @@ import React from 'react';
 
    onClick = 
    {
-     submitQuestion
+     submitPromise
      
    }
 
