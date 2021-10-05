@@ -34,7 +34,7 @@ import React from 'react';
       } else{
           url = "https://hookahsite-backend.herokuapp.com";
       }
-      axios.post(url, custData)
+      Axios.post(url, custData)
       .then( (axiosResponse)=> { 
                        // here you can use the data 
                        console.log(custData);
