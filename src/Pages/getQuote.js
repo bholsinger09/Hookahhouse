@@ -15,18 +15,29 @@ import React from 'react';
   
 
 
-   const custData =  { name:name , 
-    email:email , 
-    question:question} ;
+   const custData =  
+   { 
+     "name" :name , 
+    "email" :email , 
+    "question":question
+  } ;
 
 
 
   
     
     const submitPromise= () => {  
-      Axios.post('https://hookahsite-backend.herokuapp.com  || https://localhost:8000 ' , custData)
+      
+      let url;
+      if (process.env.SERVER_LOCATION === "LOCAL") {
+          url = "https://localhost:8000";
+      } else{
+          url = "https://hookahsite-backend.herokuapp.com";
+      }
+      axios.post(url, custData)
       .then( (axiosResponse)=> { 
                        // here you can use the data 
+                       console.log(custData);
                        const submitQuestions = axiosResponse.data;
                        console.log(submitQuestions);
                        })
