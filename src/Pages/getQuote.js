@@ -29,11 +29,16 @@ import React from 'react';
     const submitPromise= () => {  
       
       let url;
+      url = "https://hookahsite-backend.herokuapp.com";
+
+      /*
       if (process.env.SERVER_LOCATION === "LOCAL") {
           url = "https://localhost:8000";
       } else{
           url = "https://hookahsite-backend.herokuapp.com";
       }
+      */
+
       Axios.post(url, custData)
       .then( (axiosResponse)=> { 
                        // here you can use the data 
