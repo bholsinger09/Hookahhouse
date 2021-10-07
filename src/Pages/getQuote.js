@@ -26,18 +26,18 @@ import React from 'react';
 
   
     
-    const submitPromise= () => {  
-      
+    const submitPromise= (e) => {  
+      e.preventDefault();
       let url;
-      url = "https://hookahsite-backend.herokuapp.com";
+      //url = "https://hookahsite-backend.herokuapp.com";
 
-      /*
+      
       if (process.env.SERVER_LOCATION === "LOCAL") {
           url = "https://localhost:8000";
       } else{
           url = "https://hookahsite-backend.herokuapp.com";
       }
-      */
+      
 
       Axios.post(url, custData)
       .then( (axiosResponse)=> { 
@@ -117,6 +117,7 @@ import React from 'react';
 
    onClick = 
    {
+
      submitPromise
      
    }
