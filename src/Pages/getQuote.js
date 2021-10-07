@@ -132,7 +132,7 @@ const questionChange = (e) =>{
      />
    </label>
    <br/>
-   <label placeholder="enter question here" value={question} id="formQuestion" className="Form" >
+   <label placeholder="question" value={question} id="formQuestion" className="Form" >
      What products would you like to know more about:
      <input type="text" name="help" 
      onChange={questionChange}/>
