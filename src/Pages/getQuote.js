@@ -1,18 +1,42 @@
 import React from 'react';
  import {useState} from 'react';
  import Axios from 'axios';
- import {setState} from 'react';
+ //import {setState} from 'react';
  //import { response } from 'express';
 
+ 
 
- const QuoteForm = () => {
+
+
+ const QuoteForm = ()=> {
+
+ 
+
+ //      state variable ,  stateHandler = usesState(default state)
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [question, setQuestion] = useState("");
 
+//being that the state handler is already declared 
+//this should set the new state values to empty strings 
+   const clearForm = ()=>{
+     setName("");
+     setEmail("");
+     setQuestion("");
+   }
 
 
-  //This is the promise version 
+ const nameChange = (e) =>{
+   setName(e.target.value);
+ }
+ 
+ const emailChange = (e) =>{
+  setEmail(e.target.value);
+}
+
+const questionChange = (e) =>{
+  setQuestion(e.target.value);
+}
   
 
 
@@ -23,6 +47,7 @@ import React from 'react';
     "question":question
   } ;
 
+   
 
 
   
@@ -50,14 +75,8 @@ import React from 'react';
                        
       .catch((e)=> {console.log(e)})
 
-      this.setState({
-        name : '' ,
-        email : '' ,
-        question : ''
-  
-
-      })
-
+     
+      clearForm();
       
       }
 
@@ -82,7 +101,7 @@ import React from 'react';
          
 */
 
-
+   
 
 
 
@@ -99,25 +118,24 @@ import React from 'react';
 
    <label id="formName" className="Form">
      Name:
-     <input type="text" name="name" 
+     <input placeholder="name" value={name} type="text" name="name" 
 
-     onChange={(event) => { setName(event.target.value);}}
+     onChange={nameChange}
 
      />
    </label>
 
    <label id="formEmail" className="Form">
      Email:
-     <input type="text" name="email" 
-     onChange={(event) => { setEmail(event.target.value);
-     }}/>
+     <input placeholder="email" value={email} type="text" name="email" 
+     onChange={emailChange}
+     />
    </label>
    <br/>
-   <label id="formQuestion" className="Form" >
+   <label placeholder="enter question here" value={question} id="formQuestion" className="Form" >
      What products would you like to know more about:
      <input type="text" name="help" 
-     onChange={(event) => { setQuestion(event.target.value);
-     }}/>
+     onChange={questionChange}/>
    </label>
 
    <br/>
@@ -129,6 +147,8 @@ import React from 'react';
    {
 
      submitPromise
+    
+   
      
    }
 
