@@ -1,6 +1,7 @@
 import React from 'react';
  import {useState} from 'react';
- import Axios from 'axios'
+ import Axios from 'axios';
+ import {setState} from 'react';
  //import { response } from 'express';
 
 
@@ -48,6 +49,15 @@ import React from 'react';
                        })
                        
       .catch((e)=> {console.log(e)})
+
+      this.setState({
+        name : '' ,
+        email : '' ,
+        question : ''
+  
+
+      })
+
       
       }
 
